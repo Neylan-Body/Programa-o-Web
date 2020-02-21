@@ -1,17 +1,21 @@
 .painel {
     margin: 10px 0;
     padding: 10px;
-    width: 645px;
+    width: 640px;
+    border-radius: 4px;
+    box-shadow: inset 1px 1px 4px#999;
 }
 
 .novidades {
     float: left;
     background-color: #F5DCDC;
+    background: linear-gradient(#F5DCDC, #BEBEF4)
 }
 
 .mais-vendidos {
     float: right;
     background-color: #DCDCF5;
+    background: linear-gradient(#DCDCF5, #F4BEBE);
 }
 
 .painel li {
@@ -32,6 +36,7 @@
     text-transform: uppercase;
     margin-top: 2px;
     margin-left: 2px;
+    text-shadow: 3px 3px 2px #FFF;
 }
 
 .painel a {
@@ -45,5 +50,5 @@
 img {
     margin-left: 1px;
     vertical-align: left;
-    width: 192px;
+    width: 190px;
 }

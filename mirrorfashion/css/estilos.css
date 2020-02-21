@@ -44,3 +44,109 @@ body {
     margin: 0 auto;
     width: 940px;
 }
+
+.menu-opcoes a:hover {
+    color: #007DC6;
+}
+
+.menu-opcoes a:active {
+    color: #867DC6;
+}
+
+.busca,
+.menu-departamentos {
+    background-color: #DCDCDC;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 10px;
+    width: 220px;
+    float: left;
+    font-family: "Arial", "Lucida Grande", sans-serif;
+}
+
+.menu-departamentos {
+    background-color: #DCDCDC;
+    margin-top: 0;
+    padding-bottom: 10px;
+    clear: left;
+    height: 173px;
+}
+
+.menu-departamentos li ul {
+    display: none;
+}
+
+.menu-departamentos li li a:before {
+    content: '- ';
+}
+
+.menu-departamentos li li a:before {
+    content: '\272A';
+    padding-right: 3px;
+}
+
+.painel h2:before {
+    content: '\2756';
+    padding-right: 5px;
+    opacity: 0.4;
+}
+
+.menu-departamentos li:hover ul {
+    display: block;
+}
+
+.menu-departamentos ul ul li {
+    background-color: #DCDCDC;
+}
+
+.banner-destaque {
+    float: right;
+    position: absolute;
+    margin-left: 190px;
+    margin-top: -15px;
+}
+
+.busca h2,
+.busca form,
+.menu-departamentos h2 {
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu-departamentos li {
+    text-align: justify;
+    text-indent: 10px;
+    /* margin-left: -40px; */
+    list-style-type: none;
+    background-color: white;
+    margin-bottom: 1px;
+    padding: 2px 1px;
+}
+
+.menu-departamentos a {
+    color: black;
+    text-decoration: none;
+}
+
+.busca input[type=search] {
+    width: 170px;
+    border-radius: 10px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.busca button {
+    /* adicionando imagem */
+    background-image: url(../img/busca.png);
+    background-repeat: no-repeat;
+    background-color: #DCDCDC;
+    border: none;
+    /* tamanho da imagem */
+    width: 20px;
+    height: 20px;
+    /* imagem replacement */
+    text-indent: -9999px;
+}
