@@ -45,6 +45,10 @@ body {
     width: 940px;
 }
 
+.container.destaque {
+    margin-top: 15px;
+}
+
 .menu-opcoes a:hover {
     color: #007DC6;
 }
@@ -69,7 +73,7 @@ body {
     margin-top: 0;
     padding-bottom: 10px;
     clear: left;
-    height: 173px;
+    height: 405px;
 }
 
 .menu-departamentos li ul {
@@ -102,7 +106,7 @@ body {
 .banner-destaque {
     float: right;
     position: absolute;
-    margin-left: 190px;
+    margin-left: 200px;
     margin-top: -15px;
 }
 
@@ -122,7 +126,7 @@ body {
     list-style-type: none;
     background-color: white;
     margin-bottom: 1px;
-    padding: 2px 1px;
+    padding: 7px 1px;
 }
 
 .menu-departamentos a {
@@ -149,4 +153,75 @@ body {
     height: 20px;
     /* imagem replacement */
     text-indent: -9999px;
+}
+
+.painel {
+    margin-top: 450px;
+    padding: 10px;
+    width: 445px;
+    border-radius: 4px;
+    box-shadow: inset 1px 1px 4px#999;
+}
+
+.novidades {
+    transform: translateX(-230px);
+    float: left;
+    background-color: #F5DCDC;
+    background: linear-gradient(#F5DCDC, #BEBEF4)
+}
+
+.mais-vendidos {
+    float: right;
+    transform: translateY(-823px);
+    background-color: #DCDCF5;
+    background: linear-gradient(#DCDCF5, #F4BEBE);
+}
+
+.painel li {
+    display: inline-block;
+    list-style-type: none;
+    vertical-align: top;
+    width: 160px;
+    padding-left: 4px;
+    margin-left: -40px;
+    margin-top: -10px;
+    margin-right: 20px;
+}
+
+.painel h2 {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    margin-top: 2px;
+    margin-left: 2px;
+    text-shadow: 3px 3px 2px #FFF;
+}
+
+.painel a {
+    color: #333;
+    font-size: 8px;
+    width: 8px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.painel img {
+    vertical-align: left;
+    width: 140px;
+}
+
+.painel li:hover {
+    /* background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 10px #333; */
+    transform: scale(1.2) rotate(-5deg);
+    transition: 0.7s;
+}
+
+.painel li:nth-child(2n):hover {
+    transform: scale(1.2) rotate(5deg);
+}
+
+.painel li {
+    transition: 0.7s;
 }
