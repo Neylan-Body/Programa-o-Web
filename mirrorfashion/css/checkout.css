@@ -1,0 +1,12 @@
+.form-control:invalid {
+    border: 1px solid #CC0000;
+}
+
+body {
+    padding-top: 20px;
+}
+
+.navbar-nav li {
+    padding-right: 81px;
+    padding-left: 0px;
+}
