@@ -370,7 +370,7 @@
         .busca,
         .menu-departamentos {
             margin-right: 1%;
-            width: 30%;
+            width: 100%;
         }
         .menu-departamentosnav>ul {
             column-count: 1;
