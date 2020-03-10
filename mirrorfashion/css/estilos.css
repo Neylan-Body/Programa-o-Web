@@ -1,227 +1,381 @@
-.sacola {
-    background-image: url(../img/sacola.png);
-    background-repeat: no-repeat;
-    background-position: top right;
-    font-size: 14px;
-    padding-right: 35px;
-    padding-top: 8px;
-    text-align: right;
-    width: 140px;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-header {
-    position: relative;
-}
-
-.menu-opcoes {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
-
-.menu-opcoes ul {
-    font-size: 15px;
-}
-
-.menu-opcoes a {
-    color: #003366;
-}
-
-body {
-    color: #333333;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-}
-
-.menu-opcoes ul li {
-    display: inline;
-    margin-left: 20px;
-}
-
-.container {
-    margin: 0 auto;
-    width: 940px;
-}
-
-.container.destaque {
-    margin-top: 15px;
-}
-
-.menu-opcoes a:hover {
-    color: #007DC6;
-}
-
-.menu-opcoes a:active {
-    color: #867DC6;
-}
-
-.busca,
-.menu-departamentos {
-    background-color: #DCDCDC;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-right: 10px;
-    width: 220px;
-    float: left;
-    font-family: "Arial", "Lucida Grande", sans-serif;
-}
-
-.menu-departamentos {
-    background-color: #DCDCDC;
-    margin-top: 0;
-    padding-bottom: 10px;
-    clear: left;
-    height: 405px;
-}
-
-.menu-departamentos li ul {
-    display: none;
-}
-
-.menu-departamentos li li a:before {
-    content: '- ';
-}
-
-.menu-departamentos li li a:before {
-    content: '\272A';
-    padding-right: 3px;
-}
-
-.painel h2:before {
-    content: '\2756';
-    padding-right: 5px;
-    opacity: 0.4;
-}
-
-.menu-departamentos li:hover ul {
-    display: block;
-}
-
-.menu-departamentos ul ul li {
-    background-color: #DCDCDC;
-}
-
-.banner-destaque {
-    float: right;
-    position: absolute;
-    margin-left: 200px;
-    margin-top: -15px;
-}
-
-.busca h2,
-.busca form,
-.menu-departamentos h2 {
-    margin: 10px;
-    font-size: 16px;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.menu-departamentos li {
-    text-align: justify;
-    text-indent: 10px;
-    /* margin-left: -40px; */
-    list-style-type: none;
-    background-color: white;
-    margin-bottom: 1px;
-    padding: 7px 1px;
-}
-
-.menu-departamentos a {
-    color: black;
-    text-decoration: none;
-}
-
-.busca input[type=search] {
-    width: 170px;
-    border-radius: 10px;
-    border-color: gray;
-    border-style: solid;
-    border-width: 1px;
-}
-
-.busca button {
-    /* adicionando imagem */
-    background-image: url(../img/busca.png);
-    background-repeat: no-repeat;
-    background-color: #DCDCDC;
-    border: none;
-    /* tamanho da imagem */
-    width: 20px;
-    height: 20px;
-    /* imagem replacement */
-    text-indent: -9999px;
-}
-
-.painel {
-    margin-top: 450px;
-    padding: 10px;
-    width: 445px;
-    border-radius: 4px;
-    box-shadow: inset 1px 1px 4px#999;
-}
-
-.novidades {
-    transform: translateX(-230px);
-    float: left;
-    background-color: #F5DCDC;
-    background: linear-gradient(#F5DCDC, #BEBEF4)
-}
-
-.mais-vendidos {
-    float: right;
-    transform: translateY(-823px);
-    background-color: #DCDCF5;
-    background: linear-gradient(#DCDCF5, #F4BEBE);
-}
-
-.painel li {
-    display: inline-block;
-    list-style-type: none;
-    vertical-align: top;
-    width: 160px;
-    padding-left: 4px;
-    margin-left: -40px;
-    margin-top: -10px;
-    margin-right: 20px;
-}
-
-.painel h2 {
-    font-size: 24px;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
-    margin-top: 2px;
-    margin-left: 2px;
-    text-shadow: 3px 3px 2px #FFF;
-}
-
-.painel a {
-    color: #333;
-    font-size: 8px;
-    width: 8px;
-    text-align: center;
-    text-decoration: none;
-}
-
-.painel img {
-    vertical-align: left;
-    width: 140px;
-}
-
-.painel li:hover {
-    /* background-color: rgba(255, 255, 255, 0.8);
+    .sacola {
+        background-image: url(../img/sacola.png);
+        background-repeat: no-repeat;
+        background-position: top right;
+        font-size: 14px;
+        padding-right: 35px;
+        padding-top: 8px;
+        text-align: right;
+        width: 140px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+    header {
+        position: relative;
+    }
+    
+    .menu-opcoes {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    
+    .menu-opcoes ul {
+        font-size: 15px;
+    }
+    
+    .menu-opcoes a {
+        color: #003366;
+    }
+    
+    body {
+        color: #333333;
+        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    }
+    
+    .menu-opcoes ul li {
+        display: inline;
+        margin-left: 20px;
+    }
+    
+    .container {
+        margin: 0 auto;
+        width: 940px;
+    }
+    
+    .container.destaque {
+        margin-top: 15px;
+    }
+    
+    .menu-opcoes a:hover {
+        color: #007DC6;
+    }
+    
+    .menu-opcoes a:active {
+        color: #867DC6;
+    }
+    
+    .busca,
+    .menu-departamentos {
+        background-color: #DCDCDC;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-right: 10px;
+        width: 220px;
+        float: left;
+        font-family: "Arial", "Lucida Grande", sans-serif;
+    }
+    
+    .menu-departamentos {
+        background-color: #DCDCDC;
+        margin-top: 0;
+        padding-bottom: 10px;
+        clear: left;
+        height: 405px;
+    }
+    
+    .menu-departamentos li ul {
+        display: none;
+    }
+    
+    .menu-departamentos li li a:before {
+        content: '- ';
+    }
+    
+    .menu-departamentos li li a:before {
+        content: '\272A';
+        padding-right: 3px;
+    }
+    
+    .painel h2:before {
+        content: '\2756';
+        padding-right: 5px;
+        opacity: 0.4;
+    }
+    
+    .menu-departamentos li:hover ul {
+        display: block;
+    }
+    
+    .menu-departamentos ul ul li {
+        background-color: #DCDCDC;
+    }
+    
+    .banner-destaque {
+        float: right;
+        position: absolute;
+        margin-left: 200px;
+        margin-top: -15px;
+    }
+    
+    .busca h2,
+    .busca form,
+    .menu-departamentos h2 {
+        margin: 10px;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .menu-departamentos li {
+        text-align: justify;
+        text-indent: 10px;
+        /* margin-left: -40px; */
+        list-style-type: none;
+        background-color: white;
+        margin-bottom: 1px;
+        padding: 7px 1px;
+    }
+    
+    .menu-departamentos a {
+        color: black;
+        text-decoration: none;
+    }
+    
+    .busca input[type=search] {
+        width: 170px;
+        border-radius: 10px;
+        border-color: gray;
+        border-style: solid;
+        border-width: 1px;
+    }
+    
+    .busca button {
+        /* adicionando imagem */
+        background-image: url(../img/busca.png);
+        background-repeat: no-repeat;
+        background-color: #DCDCDC;
+        border: none;
+        /* tamanho da imagem */
+        width: 20px;
+        height: 20px;
+        /* imagem replacement */
+        text-indent: -9999px;
+    }
+    
+    .painel {
+        clear: left;
+        padding: 10px;
+        width: 445px;
+        border-radius: 4px;
+        box-shadow: inset 1px 1px 4px#999;
+    }
+    
+    .novidades {
+        margin-top: 20px;
+        float: left;
+        background-color: #F5DCDC;
+        background: linear-gradient(#F5DCDC, #BEBEF4)
+    }
+    
+    .mais-vendidos {
+        float: right;
+        margin-top: -379px;
+        margin-bottom: 10px;
+        background-color: #DCDCF5;
+        background: linear-gradient(#DCDCF5, #F4BEBE);
+    }
+    
+    .painel li {
+        display: inline-block;
+        list-style-type: none;
+        vertical-align: top;
+        width: 160px;
+        padding-left: 4px;
+        margin-left: -40px;
+        margin-top: -10px;
+        margin-right: 20px;
+    }
+    
+    .painel h2 {
+        font-size: 24px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+        margin-top: 2px;
+        margin-left: 2px;
+        text-shadow: 3px 3px 2px #FFF;
+    }
+    
+    .painel a {
+        color: #333;
+        font-size: 10px;
+        width: 8px;
+        text-align: center;
+        text-decoration: none;
+    }
+    
+    .painel img {
+        vertical-align: left;
+        width: 140px;
+    }
+    
+    .painel li:hover {
+        /* background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 0 0 10px #333; */
-    transform: scale(1.2) rotate(-5deg);
-    transition: 0.7s;
-}
-
-.painel li:nth-child(2n):hover {
-    transform: scale(1.2) rotate(5deg);
-}
-
-.painel li {
-    transition: 0.7s;
-}
+        transform: scale(1.2) rotate(-5deg);
+        transition: 0.7s;
+    }
+    
+    .painel li:nth-child(2n):hover {
+        transform: scale(1.2) rotate(5deg);
+    }
+    
+    .painel li {
+        transition: 0.7s;
+    }
+    
+    .painel li {
+        padding-top: 5px;
+        width: 32%;
+        padding-left: 20px;
+        margin: -10px;
+    }
+    
+    .painel img {
+        margin-left: -40px;
+    }
+    
+    figcaption {
+        margin-left: -40px;
+        width: 225%;
+    }
+    
+    @media (max-width: 940px) {
+        /* adicionar aqui os novos estilos para mobile */
+        .container {
+            width: 96%;
+            position: relative;
+        }
+        /* .container.paineis {
+        max-height: 1200px;
+    } */
+        header h1 {
+            text-align: center;
+        }
+        header h1 img {
+            max-width: 50%;
+        }
+        .sacola {
+            display: none;
+        }
+        .menu-opcoes {
+            position: static;
+            text-align: center;
+        }
+        .menu-opcoes ul li {
+            display: inline-block;
+            margin: 5px;
+        }
+        .busca,
+        .menu-departamentos {
+            margin-right: 0;
+            width: 100%;
+        }
+        .menu-departamentos {
+            height: 243px;
+        }
+        .painel {
+            width: auto;
+        }
+        .painel li {
+            width: 30%;
+        }
+        .painel figure {
+            width: 100%;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+        .banner-destaque {
+            width: 100%;
+            position: relative;
+            float: left;
+            margin-left: 0px;
+            margin-top: 0px;
+        }
+        .banner-destaque figure {
+            width: 100%;
+            margin: 0 0 0 0;
+        }
+        .banner-destaque img {
+            /* display: inline-block; */
+            width: 100%;
+        }
+        .novidades {
+            clear: left;
+            transform: translateX(0px);
+            position: relative;
+            float: none;
+        }
+        .mais-vendidos {
+            float: none;
+            margin-top: 15px;
+        }
+        .painel a {
+            position: relative;
+            margin-left: -125px;
+            font-size: 10px;
+        }
+        .painel ol {
+            width: 1px 1px;
+        }
+        .painel li {
+            /* padding-top: 15px; */
+            margin-left: 2%;
+            width: 28%;
+            padding-left: 0px;
+            padding-right: 0px;
+            margin-right: 2%;
+        }
+        .painel img {
+            margin-left: -3px;
+            vertical-align: left;
+            width: 100%;
+        }
+        figcaption {
+            vertical-align: none;
+            margin-left: -2px;
+            width: 100%;
+        }
+    }
+    
+    @media (min-width: 480px) {
+        header h1 {
+            margin: 5px 0;
+        }
+        .menu-departamentos {
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        .menu-departamentos nav>ul {
+            column-count: 2;
+        }
+    }
+    
+    @media (min-width: 720px) {
+        header h1 {
+            text-align: left;
+        }
+        .menu-opcoes {
+            position: absolute;
+        }
+        .sacola {
+            display: block;
+        }
+        .painelli {
+            width: 15%;
+        }
+        .busca,
+        .menu-departamentos {
+            margin-right: 1%;
+            width: 30%;
+        }
+        .menu-departamentosnav>ul {
+            column-count: 1;
+        }
+        .banner-destaqueimg {
+            width: 69%;
+        }
+    }
