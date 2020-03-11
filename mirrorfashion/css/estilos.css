@@ -11,7 +11,66 @@
         top: 0;
         right: 0;
     }
-    /*  */
+    
+    .painel button {
+        /* posicionamento */
+        float: right;
+        margin-right: 10px;
+        padding: 10px;
+        /* estilo */
+        background-color: #333;
+        border: 0;
+        border-radius: 4px;
+        box-shadow: 1px 1px 3px rgba(30, 30, 30, 0.5);
+        color: white;
+        font-size: 1em;
+        text-decoration: none;
+        text-shadow: 1px 01px black;
+        /* animação */
+        transition: 0.3s;
+    }
+    
+    .painel button:hover {
+        background-color: #393939;
+        box-shadow: 1px 0 20px rgba(200, 200, 120, 0.9);
+    }
+    
+    .painel button {
+        /* posicionamento */
+        position: relative;
+        margin-bottom: 10px;
+    }
+    
+    .painelbutton::after {
+        /* elemento vazio */
+        content: '';
+        display: block;
+        height: 0;
+        width: 0;
+        /* triângulo */
+        border-top: 10px solid #333;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        /* posicionamento */
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        /* animação */
+        transition: 0.3s;
+    }
+    
+    .painel button:hover::after {
+        border-top-color: #393939;
+    }
+    
+    .painel li:nth-child(n+7) {
+        display: none;
+    }
+    
+    .painel-aberto li:nth-child(n+7) {
+        display: inline-block;
+    }
     
     .destaque {
         position: relative;
@@ -189,15 +248,14 @@
     }
     
     .painel {
-        clear: left;
+        margin: 10px 0;
         padding: 10px;
-        width: 445px;
+        width: 47%;
         border-radius: 4px;
         box-shadow: inset 1px 1px 4px#999;
     }
     
     .novidades {
-        margin-top: 20px;
         float: left;
         background-color: #F5DCDC;
         background: linear-gradient(#F5DCDC, #BEBEF4)
@@ -205,8 +263,6 @@
     
     .mais-vendidos {
         float: right;
-        margin-top: -379px;
-        margin-bottom: 10px;
         background-color: #DCDCF5;
         background: linear-gradient(#DCDCF5, #F4BEBE);
     }
@@ -397,18 +453,15 @@
         .sacola {
             display: block;
         }
-        .painelli {
-            width: 15%;
-        }
         .busca,
         .menu-departamentos {
             margin-right: 1%;
             width: 100%;
         }
-        .menu-departamentosnav>ul {
+        .menu-departamentos nav>ul {
             column-count: 1;
         }
-        .banner-destaqueimg {
-            width: 69%;
+        .banner-destaque img {
+            width: 106%;
         }
     }
