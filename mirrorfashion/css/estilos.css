@@ -11,6 +11,39 @@
         top: 0;
         right: 0;
     }
+    /*  */
+    
+    .destaque {
+        position: relative;
+    }
+    
+    .pause {
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+    
+    .play {
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+    
+    .pause {
+        border-left: 10px solid #900;
+        border-right: 10px solid #900;
+        height: 30px;
+        width: 5px;
+    }
+    
+    .play {
+        border-left: 25px solid #900;
+        border-bottom: 15px solid transparent;
+        border-top: 15px solid transparent;
+    }
+    /*  */
     
     header {
         position: relative;
